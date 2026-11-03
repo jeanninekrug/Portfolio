@@ -123,3 +123,6 @@ th{font:500 .72rem var(--mono);text-transform:uppercase;letter-spacing:.05em;col
 
 .heroimg{margin-top:56px}
 .heroimg img{width:100%;height:auto}
+
+figure.video{margin:28px 0 0}
+figure.video video{width:100%;height:auto;display:block;background:#000;border:1px solid var(--dark)}
