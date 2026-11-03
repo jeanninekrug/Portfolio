@@ -1,6 +1,6 @@
 :root{
   --dark:#0C0C0E; --dark2:#17171B; --ink:#101012; --bg:#F3F3F5; --white:#FFFFFF; --muted:#65656E; --line:#DADADF;
-  --accent:#0B7A5A; --accent-light:#4ADE9F;
+  --accent:#C81E6B; --accent-light:#FF8CBF;
   --head:"Archivo","Helvetica Neue",Arial,sans-serif; --sans:"Inter","Helvetica Neue",Arial,sans-serif; --mono:"IBM Plex Mono",ui-monospace,Menlo,monospace;
   --max:1240px; --read:660px;
 }
