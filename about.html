@@ -46,4 +46,12 @@
 <footer class="site"><div class="wrap">
 <p>© 2026 Jeannine Krug. Student concept work shown here is not affiliated with or endorsed by any company named.</p>
 </div></footer>
+<dialog id="lb" aria-label="Enlarged image"><button type="button" id="lbx" aria-label="Close enlarged image">×</button><img id="lbi" alt=""><p id="lbc"></p></dialog>
+<script>
+(function(){var d=document.getElementById("lb");if(!d||!d.showModal)return;var im=document.getElementById("lbi"),c=document.getElementById("lbc");
+document.querySelectorAll("figure a.zoom").forEach(function(a){a.addEventListener("click",function(e){e.preventDefault();var i=a.querySelector("img"),f=a.parentNode.querySelector("figcaption");im.src=a.getAttribute("href");im.alt=i?i.alt:"";c.textContent=f?f.textContent.replace(" · Click to enlarge",""):"";d.showModal();});});
+document.getElementById("lbx").addEventListener("click",function(){d.close();});
+d.addEventListener("click",function(e){if(e.target===d)d.close();});
+d.addEventListener("close",function(){im.removeAttribute("src");});})();
+</script>
 </body></html>

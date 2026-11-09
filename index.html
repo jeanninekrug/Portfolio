@@ -34,12 +34,14 @@
 
 <section class="work" id="work" aria-labelledby="work-h"><div class="wrap">
 <h2 id="work-h">Selected work</h2>
-<article class="proj textonly"><div class="info">
-<p class="num">01 / In progress</p>
-<h3>Research Data Management Core, UNC</h3>
-<p>I lead user research and design for a new portal that helps UNC researchers find data services.</p>
+<article class="proj">
+<a class="shot unc" href="projects/hellordmc.html" tabindex="-1" aria-hidden="true" style="background:#fff"><img src="assets/img/rdmc-dashboard.jpg" alt="" loading="lazy"></a>
+<div class="info">
+<p class="num">01</p>
+<h3><a href="projects/hellordmc.html">HelloRDMC: helping researchers find the right data service</a></h3>
+<p>Researchers at UNC often don’t know what the Core offers or which tool they need. I interviewed researchers, built personas, and designed the portal dashboard and help flow. Testing comes next.</p>
 <dl><dt>Role</dt><dd>UX researcher and designer</dd><dt>Status</dt><dd>In progress, 2026 to present</dd><dt>Methods</dt><dd>Interviews, personas, wireframes, accessibility audit</dd></dl>
-<p style="margin:0;color:var(--muted)">Details available on request.</p>
+<a class="more" href="projects/hellordmc.html">View case study</a>
 </div></article>
 <article class="proj">
 <a class="shot" href="projects/group-watch.html" tabindex="-1" aria-hidden="true" style="background:#3a3a3a"><img src="assets/img/gw-mockup-card.jpg" alt="" loading="lazy"></a>
@@ -76,4 +78,12 @@
 <footer class="site"><div class="wrap">
 <p>© 2026 Jeannine Krug. Student concept work shown here is not affiliated with or endorsed by any company named.</p>
 </div></footer>
+<dialog id="lb" aria-label="Enlarged image"><button type="button" id="lbx" aria-label="Close enlarged image">×</button><img id="lbi" alt=""><p id="lbc"></p></dialog>
+<script>
+(function(){var d=document.getElementById("lb");if(!d||!d.showModal)return;var im=document.getElementById("lbi"),c=document.getElementById("lbc");
+document.querySelectorAll("figure a.zoom").forEach(function(a){a.addEventListener("click",function(e){e.preventDefault();var i=a.querySelector("img"),f=a.parentNode.querySelector("figcaption");im.src=a.getAttribute("href");im.alt=i?i.alt:"";c.textContent=f?f.textContent.replace(" · Click to enlarge",""):"";d.showModal();});});
+document.getElementById("lbx").addEventListener("click",function(){d.close();});
+d.addEventListener("click",function(e){if(e.target===d)d.close();});
+d.addEventListener("close",function(){im.removeAttribute("src");});})();
+</script>
 </body></html>

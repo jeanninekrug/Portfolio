@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>HelloRDMC case study | Jeannine Krug</title>
+<meta name="description" content="Interviews, personas and wireframes for a researcher-facing portal at UNC’s Research Data Management Core. In progress.">
+<!-- DRAFT: delete the next line when you want search engines to list the site -->
+<meta name="robots" content="noindex">
+<meta property="og:title" content="HelloRDMC case study | Jeannine Krug">
+<meta property="og:description" content="Interviews, personas and wireframes for a researcher-facing portal at UNC’s Research Data Management Core. In progress.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700;800&family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to main content</a>
+<header class="site light"><div class="wrap">
+<a class="brand" href="../index.html">Jeannine Krug</a>
+<nav aria-label="Main"><ul>
+<li><a href="../index.html#work">Work</a></li>
+<li><a href="../about.html">About</a></li>
+<li><a href="../assets/Jeannine-Krug-Resume.pdf">Resume</a></li>
+<li><a href="../index.html#contact">Contact</a></li>
+</ul></nav></div></header>
+<main id="main">
+
+<div class="wrap">
+<div class="cs-head">
+<p class="label">Case study / In progress</p>
+<h1>HelloRDMC: helping researchers find the right data service</h1>
+<p class="lede">I interviewed UNC researchers, turned what they said into personas and design priorities, and designed the dashboard and help flow for a new portal.</p>
+<dl class="facts">
+<div><dt>Role</dt><dd>UX researcher and designer</dd></div>
+<div><dt>Team</dt><dd>Six fellows. I work most with front-end developers and the Education and Outreach team.</dd></div>
+<div><dt>Timeline</dt><dd>August 2026 to present</dd></div>
+<div><dt>Methods</dt><dd>Interviews, synthesis, personas, wireframes, accessibility audit</dd></div>
+</dl>
+<div class="hero-img"><img src="../assets/img/rdmc-dashboard.jpg" alt="Wireframe of the Hello RDMC dashboard"></div>
+<p class="note"><b>Status</b>The front end is still being built and the designs haven’t been tested with users, so there are no results yet. Participant roles are generalized.</p>
+</div>
+<div class="cs-layout">
+<nav class="toc" aria-label="On this page"><ol><li><a href="#problem">Problem</a></li><li><a href="#research">Research</a></li><li><a href="#insights">Findings</a></li><li><a href="#priorities">Priorities</a></li><li><a href="#design">Design</a></li><li><a href="#audit">Audit</a></li><li><a href="#next">Next</a></li></ol></nav>
+<div class="prose">
+
+<section id="problem"><h2>Problem</h2>
+<p>The Research Data Management Core (RDMC) offers tools and services for planning, collecting, managing, and sharing research data. Researchers told us the support was good. They struggled to find it and to know which tool to use.</p>
+<p>My design goal: make tools and ticket submission highly visible, and make the chat assistant, contact info, tool selection guide, help, and ticket submission easy to find.</p></section>
+
+<section id="research"><h2>Research</h2>
+<p>I ran five discovery interviews with UNC research staff in coordination and management roles. Four were analyzed; my supervisor directed that one be left out. After each interview I debriefed with my supervisor to pull out themes, then reread the transcripts on my own.</p>
+<p class="note"><b>Limit</b>Four participants shows common problems, not how many researchers share them.</p></section>
+
+<section id="insights"><h2>Findings</h2>
+<ul>
+<li><strong>Visibility.</strong> Researchers don’t know what RDMC offers. Many heard about it from colleagues.</li>
+<li><strong>Choosing tools.</strong> They know their goal but not which tool fits their project, such as REDCap@UNC versus Veeva SiteVault.</li>
+<li><strong>Support.</strong> They want templates, examples, FAQs, and quick answers. They praised RDMC staff and rely on them.</li>
+</ul>
+<p>The takeaway: the issue isn’t the quality of the service. It’s helping researchers find, understand, and use it.</p>
+<h3>Three personas</h3>
+<p>I wrote three personas from the interviews: the Data Steward, the Research Operations Navigator, and the Technical Service Integrator. Quotes are verbatim and names are fictional. They split on one point:</p>
+<ul>
+<li>The Data Steward prefers expert humans over automation.</li>
+<li>The Navigator wants self-service for simple questions and a person for complex ones.</li>
+<li>The Technical Service Integrator is most open to AI help and wants strong search.</li>
+</ul>
+<div class="pair three">
+<figure><a class="zoom" href="../assets/img/rdmc-persona-data-steward.jpg" target="_blank" rel="noopener" aria-label="Enlarge image: The Data Steward"><img src="../assets/img/rdmc-persona-data-steward.jpg" alt="Persona card for The Data Steward, a research project manager responsible for data sharing and compliance, who prefers expert humans over automation. It lists goals, pain points such as compliance uncertainty, and opportunities such as a library of data use agreement templates." loading="lazy"></a><figcaption>The Data Steward</figcaption></figure><figure><a class="zoom" href="../assets/img/rdmc-persona-operations-navigator.jpg" target="_blank" rel="noopener" aria-label="Enlarge image: The Research Operations Navigator"><img src="../assets/img/rdmc-persona-operations-navigator.jpg" alt="Persona card for The Research Operations Navigator, a research project director who wants self-service for simple questions and a person for complicated ones. It lists goals, pain points such as service discoverability, and opportunities such as a service finder tool." loading="lazy"></a><figcaption>The Research Operations Navigator</figcaption></figure><figure><a class="zoom" href="../assets/img/rdmc-persona-service-integrator.jpg" target="_blank" rel="noopener" aria-label="Enlarge image: The Technical Service Integrator"><img src="../assets/img/rdmc-persona-service-integrator.jpg" alt="Persona card for The Technical Service Integrator, a technical leader who is most open to AI assistance. It lists goals, pain points such as hidden services, and opportunities such as a unified service catalog and better search." loading="lazy"></a><figcaption>The Technical Service Integrator</figcaption></figure>
+</div></section>
+
+<section id="priorities"><h2>Priorities</h2>
+<p>I turned the findings into six design opportunities.</p>
+<table><thead><tr><th>Priority</th><th>Opportunity</th></tr></thead><tbody>
+<tr><td>High</td><td>Increase RDMC visibility</td></tr>
+<tr><td>High</td><td>Improve service discovery</td></tr>
+<tr><td>High</td><td>Clarify tool selection</td></tr>
+<tr><td>High</td><td>Simplify guidance</td></tr>
+<tr><td>Medium</td><td>Stronger support pathways</td></tr>
+<tr><td>Medium</td><td>Lifecycle communications</td></tr></tbody></table>
+<p>The two Medium items fit the Education and Outreach team better than the design team, so I passed those findings to them.</p></section>
+
+<section id="design"><h2>Design</h2>
+<p>I started by hand. Before opening Figma, I sketched the dashboard and its help states on paper, using paper cut-outs for the profile menu and the chat panels.</p>
+<div class="pair">
+<figure><a class="zoom" href="../assets/img/rdmc-sketch-dashboard.jpg" target="_blank" rel="noopener" aria-label="Enlarge image: 1. Dashboard"><img src="../assets/img/rdmc-sketch-dashboard.jpg" alt="Pencil sketch on paper of the RDMC dashboard: navigation bar, a search field, a Submit Ticket button, a Tool Selection Guide card, three columns of tool cards grouped by project stage, an Activity Overview panel, and a chat button in the bottom corner." loading="lazy"></a><figcaption>1. Dashboard</figcaption></figure><figure><a class="zoom" href="../assets/img/rdmc-sketch-profile-menu.jpg" target="_blank" rel="noopener" aria-label="Enlarge image: 2. Profile menu"><img src="../assets/img/rdmc-sketch-profile-menu.jpg" alt="Pencil sketch of the same dashboard with a paper cut-out profile menu open, showing Hi name, My Profile, Settings and Sign out." loading="lazy"></a><figcaption>2. Profile menu</figcaption></figure><figure><a class="zoom" href="../assets/img/rdmc-sketch-help-menu.jpg" target="_blank" rel="noopener" aria-label="Enlarge image: 3. Chat assistant, first screen"><img src="../assets/img/rdmc-sketch-help-menu.jpg" alt="Pencil sketch of the dashboard with a paper cut-out of the chat assistant’s first screen reading Hi Name, How can we assist, with options to get help from the chat assistant or contact the team." loading="lazy"></a><figcaption>3. Chat assistant, first screen</figcaption></figure><figure><a class="zoom" href="../assets/img/rdmc-sketch-contact-options.jpg" target="_blank" rel="noopener" aria-label="Enlarge image: 4. Contact options"><img src="../assets/img/rdmc-sketch-contact-options.jpg" alt="Pencil sketch of the dashboard with a paper cut-out panel reading We would love to help, with options to submit a ticket, email the team, or switch to the chat assistant." loading="lazy"></a><figcaption>4. Contact options</figcaption></figure>
+</div>
+<p>Then I moved to Figma. Tools are grouped by stage of a research project, with Submit Ticket and a Tool Selection Guide up front, plus search and a chat assistant button.</p>
+<figure><a class="zoom" href="../assets/img/rdmc-dashboard.jpg" target="_blank" rel="noopener" aria-label="Enlarge image: Dashboard wireframe"><img src="../assets/img/rdmc-dashboard.jpg" alt="Grayscale wireframe of the Hello RDMC dashboard with tool cards grouped by project stage, a Submit Ticket button, and a Tool Selection Guide card." loading="lazy"></a><figcaption>Dashboard wireframe</figcaption></figure>
+<h3>Help flow</h3>
+<p>Researchers split on wanting a person or a bot, so the chat assistant’s first screen offers both. It opens with “Hi, Name! How can we assist?” Users can contact the team or use the chat assistant. The contact panel explains there is no live chat and offers a ticket, email, or a switch to the assistant.</p>
+<div class="pair stack">
+<figure><a class="zoom" href="../assets/img/rdmc-help-menu.jpg" target="_blank" rel="noopener" aria-label="Enlarge image: 1. Chat assistant, first screen"><img src="../assets/img/rdmc-help-menu.jpg" alt="Wireframe of the first screen of the chat assistant, greeting the user and offering the chat assistant or contacting the team." loading="lazy"></a><figcaption>1. Chat assistant, first screen</figcaption></figure><figure><a class="zoom" href="../assets/img/rdmc-contact-panel.jpg" target="_blank" rel="noopener" aria-label="Enlarge image: 2. Contact the team"><img src="../assets/img/rdmc-contact-panel.jpg" alt="Wireframe of the contact panel with options to submit a ticket, email, or switch to the chat assistant." loading="lazy"></a><figcaption>2. Contact the team</figcaption></figure>
+</div>
+<div class="pair stack">
+<figure><a class="zoom" href="../assets/img/rdmc-chat-a.jpg" target="_blank" rel="noopener" aria-label="Enlarge image: 3. Chat window, option A"><img src="../assets/img/rdmc-chat-a.jpg" alt="Wireframe of the chat assistant with stacked prompt buttons for FAQs, Tool Selection Guidance, Question Prompt and Something Else." loading="lazy"></a><figcaption>3. Chat window, option A</figcaption></figure><figure><a class="zoom" href="../assets/img/rdmc-chat-b.jpg" target="_blank" rel="noopener" aria-label="Enlarge image: 4. Chat window, option B"><img src="../assets/img/rdmc-chat-b.jpg" alt="Wireframe of the chat assistant with inline prompt buttons for Tool Selection, Schedule Consultation and FAQs." loading="lazy"></a><figcaption>4. Chat window, option B</figcaption></figure>
+</div>
+<p>I designed two chat windows for the team to review. Their feedback is still to come.</p>
+<h3>How the screens connect</h3>
+<figure><a class="zoom" href="../assets/img/rdmc-figma-flow-annotated.jpg" target="_blank" rel="noopener" aria-label="Enlarge image: Annotated frames used to present the design flow to my team"><img src="../assets/img/rdmc-figma-flow-annotated.jpg" alt="Annotated Figma frames showing the dashboard, the profile menu, the chat assistant, two chat versions, and the contact options, joined by arrows with short notes on what each selection does." loading="lazy"></a><figcaption>Annotated frames used to present the design flow to my team</figcaption></figure>
+</section>
+
+<section id="audit"><h2>Accessibility audit</h2>
+<p>Separately, to align with WCAG 2.2, which UNC requires, I audited four pages of the existing admin site with WAVE and manual keyboard testing, and documented 10 issues with code and annotated screenshots. These findings haven’t shaped the new designs yet.</p></section>
+
+<section id="next"><h2>Next</h2>
+<ul>
+<li>Get team feedback on the two chat windows.</li>
+<li>Continue the high-fidelity design as the front end is built.</li>
+<li>Design the system flow and interface for a tool finder wizard that helps researchers choose the right tool or system.</li>
+<li>Test with researchers and revise, checking each change against the original interview pain points.</li>
+<li>Map the researcher journey from needing a service to getting help.</li>
+</ul></section>
+</div></div>
+<div class="nextproj"><p class="label">Next project</p><h3><a href="group-watch.html">Group Watch: helping friends agree on what to watch</a></h3></div>
+</div>
+</main>
+<section class="closing" id="contact"><div class="wrap">
+<h2>Let’s connect.</h2>
+<a class="mail" href="mailto:jeannineakrug@gmail.com">jeannineakrug@gmail.com</a>
+<ul><li><a href="https://www.linkedin.com/in/jeannine-krug">LinkedIn</a></li>
+<li><a href="../assets/Jeannine-Krug-Resume.pdf">Resume (PDF)</a></li></ul>
+</div></section>
+<footer class="site"><div class="wrap">
+<p>© 2026 Jeannine Krug. Student concept work shown here is not affiliated with or endorsed by any company named.</p>
+</div></footer>
+<dialog id="lb" aria-label="Enlarged image"><button type="button" id="lbx" aria-label="Close enlarged image">×</button><img id="lbi" alt=""><p id="lbc"></p></dialog>
+<script>
+(function(){var d=document.getElementById("lb");if(!d||!d.showModal)return;var im=document.getElementById("lbi"),c=document.getElementById("lbc");
+document.querySelectorAll("figure a.zoom").forEach(function(a){a.addEventListener("click",function(e){e.preventDefault();var i=a.querySelector("img"),f=a.parentNode.querySelector("figcaption");im.src=a.getAttribute("href");im.alt=i?i.alt:"";c.textContent=f?f.textContent.replace(" · Click to enlarge",""):"";d.showModal();});});
+document.getElementById("lbx").addEventListener("click",function(){d.close();});
+d.addEventListener("click",function(e){if(e.target===d)d.close();});
+d.addEventListener("close",function(){im.removeAttribute("src");});})();
+</script>
+</body></html>
